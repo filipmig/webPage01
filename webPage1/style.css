@@ -1,0 +1,670 @@
+/*
+font-family: 'Saira',
+sans-serif;
+font-family: 'Saira Condensed',
+sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  header {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:#C3C3C3;
+    height: 90vh;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url(images/tlo6.jpg);
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  header .welcome {
+    position: absolute;
+    z-index: 1;
+    font-size: 35px;
+    font-family: 'Sainta Condensed', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .button{
+    position: absolute;
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    line-height: 36px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 14px;
+    border: 3px solid yellow;
+    color: yellow;
+    font-weight: 500;    
+  }
+
+  .button:hover{
+    color: yellow;
+    transition: 0.3s;
+    border: 2px solid yellow;
+    background-color: black;
+  }
+ @media (min-width:320px) and (orientation:portrait){
+   header .welcome{
+     left:3%;
+     top:10%;
+   }
+
+   .button{
+    left: 20%;
+    top:50%;
+    font-size:14px;
+   }
+ }
+ @media (min-width:360px) and (orientation:portrait){
+   header .welcome{
+     left:3%;
+     top:10%;
+   }
+
+   .button{
+    left: 23%;
+    top:50%;
+    font-size:14px;
+
+   }
+  }
+ @media (min-width:410px) and (orientation:portrait){
+  header .welcome {
+    font-size: 50px;
+    left: 6%;
+    top:10%;
+  }
+  .button{
+    top: 60%;
+    left:12%;
+    font-size: 25px;
+  }
+ }
+ @media (min-width:768px) and (orientation:portrait){
+  header .welcome {
+    font-size: 70px;
+    left: 5%;
+    top:10%;
+  }
+
+  .button{
+    top: 60%;
+    left:23%;
+    font-size: 35px;
+    padding: 10px 30px;
+  }
+ }
+ @media (min-width:1024px) and (orientation:portrait){
+  header .welcome {
+    font-size: 90px;
+    left: 5%;
+    top:10%;
+  }
+
+  .button{
+    top: 60%;
+    left:22%;
+    font-size: 50px;
+    padding: 20px 35px;
+  }
+ }
+ @media (orientation:landscape) and (min-width:533px){
+    header .welcome {
+      font-size: 30px;
+      left: 60%;
+      top:26%;
+    }
+  
+    .button{
+      top: 80%;
+      left:62%;
+      font-size: 15px;
+      padding: 0px 10px;
+    }
+   }
+   @media (orientation:landscape) and (min-width:640px){
+    header .welcome {
+      font-size: 35px;
+      left: 60%;
+      top:26%;
+    }
+  
+    .button{
+      top: 80%;
+      left:64%;
+      font-size: 16px;
+      padding: 0px 12px;
+    }
+   }
+   @media (orientation:landscape) and (min-width:1024px){
+    header .welcome {
+      font-size: 50px;
+      left: 65%;
+      top:38%;
+    }
+  
+    .button{
+      top: 80%;
+      left:69%;
+      font-size: 20px;
+      padding: 3px 25px;
+    }
+   }
+   @media (orientation:landscape) and (min-width:1280px){
+    header .welcome {
+      font-size: 65px;
+      left: 68%;
+      top:43%;
+    }
+  
+    .button{
+      top: 85%;
+      left:72%;
+      font-size: 25px;
+      padding: 5px 28px;
+    }
+   }
+   @media (orientation:landscape) and (min-width:1600px){
+    .button{
+      top: 85%;
+      left:75%;
+    }
+   }
+
+   /* informacje o firmie (sekcja 1) */
+   
+   .informations{
+     max-width: 1600px;
+     margin: 0 auto;
+     padding: 5%;
+     text-align: center;
+   }
+   .informations h1{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+   }
+
+  .information .info{
+    font-family: 'Saira Condensed',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+  }
+  .information img{
+    width: 100%;
+    margin: 5px 0;
+    max-width: 375px;
+  }
+  .information .mapa{
+    max-width: 200px;
+  }
+  @media (min-width:768px) and (orientation:portrait){
+    .information .info{
+      font-size: 25px;
+    }
+    .information .mapa{
+      max-width: 250px;
+    }
+  }
+  @media (min-width:1024px) and (orientation:portrait){
+    .informations h1{
+      font-size: 50px;
+     }
+    .information .info{
+      font-size: 40px;
+      font-weight: 300;
+      margin: 20px 0;
+    }
+    .information img{
+      width: 100%;
+      margin: 5px 0;
+      max-width: 500px;
+    }
+    .information .mapa{
+      max-width: 350px;
+    }
+  }
+@media (min-width:533px) and (orientation:landscape){
+  .informations h1{
+    font-size: 25px;
+  }
+}
+@media (min-width:1024px) and (orientation:landscape){
+  .informations h1{
+    font-size: 35px;
+   }
+   .information{
+     float: left;
+     width: 49%;
+     padding: 10px;
+   }
+  .information .info{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 20px 0;
+  }
+  .information img{
+    width: 100%;
+    margin: 7px 0;
+    max-width: 400px;
+  }
+  .information .mapa{
+    margin: 5px 0;
+    max-width: 160px;
+  }
+}
+@media (min-width:1366px) and (orientation:landscape){
+  .information .info{
+    font-size: 30px;
+    font-weight: 300;
+    margin: 20px 0;
+  }
+  .information img{
+    width: 100%;
+    margin: 7px 0;
+    max-width: 600px;
+  }
+  .information .mapa{
+    margin: 5px 0;
+    max-width: 230px;
+  }
+}
+@media (min-width:1600px) and (orientation:landscape){
+  .information .mapa{
+    max-width: 240px;
+  }
+}
+/* USLUGI */
+
+.portfolio{
+  background-color: black;
+  padding: 10px 0 30px;
+}
+.portfolio h1{
+  font-size: 30px;
+  font-family:'Saira Condensed', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.portfolio .web img{
+  width: 100%;
+}
+.portfolio .about{
+  color: white;
+  font-family:'Saira Condensed', sans-serif;
+  font-weight: normal;
+  padding: 10px 20px 20px 0;
+  text-align: left;
+}
+.portfolio .about h2{
+  text-align: center;
+  color: 	#DCDCDC;
+  font-size: 25px;
+  border-bottom: 2px solid #DCDCDC;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  text-indent: 20px;
+}
+.portfolio .about .lista{
+  font-size: 20px;
+  padding-left: 20px;
+  text-indent: 3px;
+}
+.portfolio .about p{
+  text-indent: 20px;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.portfolio .project{
+  max-width: 1400px;
+  margin: 0 auto 20px;
+}
+.portfolio .project:nth-of-type(odd) {
+  background-color: #FF8C00;
+}
+.portfolio .project:nth-of-type(even) {
+  background-color:#FFA500;
+}
+
+@media (min-width:360px) and (orientation:portrait){
+  .portfolio .about p{
+    padding: 10px 10px;
+  
+  }
+}
+@media (min-width:320px) and (orientation:portrait){
+  .portfolio .about p{
+    padding: 10px 10px;
+  
+  }
+}
+@media (min-width:768px) and (orientation:portrait){
+  .portfolio h1{
+    font-size: 40px;
+  }
+  .portfolio .about h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .portfolio .about .lista{
+    font-size: 23px;
+    text-indent: 7px;
+  }
+  .portfolio .about p{
+    font-size: 23px;
+  }
+}
+@media (min-width:1024px) and (orientation:portrait){
+  .portfolio h1{
+    font-size: 50px;
+  }
+  .portfolio .about h2{
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+  .portfolio .about .lista{
+    font-size: 32px;
+    text-indent: 18px;
+    margin-left: 20px;
+  }
+  .portfolio .about p{
+    font-size: 32px;
+    text-indent: 10px;
+  }
+}
+@media (orientation: landscape) {
+  .web, .about {
+    width: 50%;
+    float: left;
+  }
+  .web img {
+    display: block;
+  }
+  .portfolio .project:nth-of-type(even) .web {
+    float: right;
+  }
+  .portfolio .project:nth-of-type(even) .about {
+    padding-right: 0;
+  }
+  .portfolio .project:nth-of-type(even) .about p {
+    padding-right: 20px;
+  }
+  .portfolio .project:nth-of-type(even) .about h2 {
+    text-indent: 0;
+    margin-left: 40px;
+  }
+}
+@media (min-width:1024px) and (orientation:landscape){
+  .portfolio h1{
+    font-size: 40px;
+  }
+  .portfolio .about h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .portfolio .about .lista{
+    font-size: 20px;
+    text-indent: 18px;
+    margin-left: 50px;
+  }
+  .portfolio .about p{
+    font-size: 19px;
+    text-indent: 10px;
+    margin-left: 50px;
+  }
+}
+@media (min-width:1366px) and (orientation:landscape){
+  .portfolio h1{
+    font-size: 45px;
+  }
+  .portfolio .about h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  .portfolio .about .lista{
+    font-size: 25px;
+    text-indent: 18px;
+    margin-left: 60px;
+  }
+  .portfolio .about p{
+    font-size: 25px;
+    text-indent: 10px;
+    margin-left: 50px;
+  }
+}
+@media (min-width:1400px) and (orientation:landscape){
+  .portfolio h1{
+    font-size: 50px;
+  }
+  .portfolio .about h2{
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  .portfolio .about .lista{
+    font-size: 27px;
+    text-indent: 18px;
+    margin-left: 60px;
+  }
+  .portfolio .about p{
+    font-size: 27px;
+    text-indent: 10px;
+    margin-left: 50px;
+  }
+}
+
+/* slogan */
+.slogan{
+  text-align: center;
+  background-image: url(images/motto.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+ 
+}
+.slogan h1{
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+.slogan p{
+  font-family: 'Saira', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+ 
+}
+.slogan .bg {
+  padding: 30px 10px;
+}
+
+@media (orientation:portrait) and (min-width:320px){
+  .slogan p{
+    height: 30vh;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  .slogan h1{
+    font-size: 20px;
+  }
+}
+@media (orientation:portrait) and (min-width:411px){
+  .slogan p{
+    height: 30vh;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  .slogan h1{
+    font-size: 25px;
+  }
+}
+@media (orientation:portrait) and (min-width:768px){
+  .slogan p{
+    height: 30vh;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+  }
+  .slogan h1{
+    margin-top: 25px;
+    font-size: 30px;
+  }
+}
+@media (orientation:portrait) and (min-width:1024px){
+  .slogan p{
+    height: 30vh;
+    font-size: 70px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+  }
+  .slogan h1{
+    margin-top: 25px;
+    font-size: 35px;
+  }
+}
+@media (orientation:landscape) and (min-width:533px){
+  .slogan p{
+    height: 20vh;
+    font-size: 30px;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .slogan h1{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+@media (orientation:landscape) and (min-width:533px){
+  .slogan p{
+    font-size: 40px;
+  }
+  .slogan h1{
+    font-size: 20px;
+  }
+}
+@media (orientation:landscape) and (min-width:1024px){
+  .slogan p{
+    font-size: 50px;
+    margin-top: 70px;
+  }
+  .slogan h1{
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+}
+@media (orientation:landscape) and (min-width:1366px){
+  .slogan p{
+    font-size: 70px;
+    margin-top: 110px;
+  }
+  .slogan h1{
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+}
+
+/* kontakt */
+.contact {
+  background-color: #000;
+  padding: 30px 20px;
+}
+.contact h1 {
+  font-family: 'Saira Condensed',
+  sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+.contact .wrap {
+  padding-top: 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.contact .dane p{
+  font-family: saira condensed, sans-serif;
+  color: white;
+  font-size: 20px;
+}
+.contact .socials {
+  font-size: 25px;
+}
+
+.contact .social {
+  padding: 10px 0;
+  color: white;
+  font-family: saira condensed, sans-serif;
+}
+
+.contact .social img {
+  float: left;
+}
+.contact .social span {
+  line-height: 72px;
+  padding-left: 20px;
+  float: left;
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .contact h1 {
+    font-size: 50px;
+    padding: 30px 0;
+  }
+  .contact .dane, .socials{
+    float: left;
+    width: 50%;
+    padding: 0 50px;
+  }
+  .contact .social {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact .socials{
+    margin-bottom: 100px;
+  }
+  .contact .dane p{
+    font-size: 25px;
+  }
+  .contact .socials{
+    font-size: 25px;
+  }
+
+}
+/* stopka */
+footer {
+  background-color: #29a6dc;
+  color: white;
+  font-family: saira, sans-serif;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
